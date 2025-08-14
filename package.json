@@ -1,0 +1,43 @@
+{
+  "name": "myeline",
+  "version": "1.0.0",
+  "description": "Stage 4 Cancer Care & Comfort Hub - A secure, personalized care platform for cancer patients and caregivers",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "test": "npm run test:client && npm run test:server",
+    "test:client": "cd client && npm run test",
+    "test:server": "cd server && npm run test",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "lint": "npm run lint:client && npm run lint:server",
+    "lint:client": "cd client && npm run lint",
+    "lint:server": "cd server && npm run lint",
+    "start": "cd server && npm start"
+  },
+  "keywords": [
+    "healthcare",
+    "cancer-care",
+    "patient-portal",
+    "caregiver-dashboard",
+    "medical-tracking",
+    "wellness"
+  ],
+  "author": "Myeline Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acesonder/myeline.git"
+  }
+}
